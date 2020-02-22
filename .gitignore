@@ -1,0 +1,5 @@
+sports-env/
+.vscode/
+__pycache__
+migrations/
+*.pyc

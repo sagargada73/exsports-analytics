@@ -1,0 +1,1 @@
+web: gunicorn sports_analytics.wsgi --log-level debug
