@@ -3,3 +3,4 @@ sports-env/
 __pycache__
 migrations/
 *.pyc
+db.sqlite3
