@@ -72,12 +72,12 @@
 
           <div class="col-md-12" style="position: relative;" data-aos="fade-up" data-aos-delay="200">
             
-            <img src=" {% static 'index/images/undraw_investing_7u74.svg' %} " alt="Image" class="img-fluid img-absolute">
+            <img src=" {% static 'index/images/undraw_predictive_analytics.svg' %}" alt="Image" class="img-fluid img-absolute" style="width: 60%; right: 8%;">
 
             <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-6 mr-auto">
                 <h1>Discover The Unknown</h1>
-                <h5 class="mb-2 mt-4">Select Your Team</h5>
+                <h5 class="mb-3 mt-5">Select Your Team</h5>
 
                 <form action="{% url 'setTeam' %}" method="POST">
                     {% csrf_token %}
