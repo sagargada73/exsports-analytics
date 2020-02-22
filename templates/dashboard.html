@@ -22,7 +22,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-image=" {% static 'img/sidebar-5.jpg' %} ">
+        <div class="sidebar" data-color="blue"  data-image=" {% static 'img/sidebar-5.jpg' %} ">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -37,13 +37,13 @@
                 <ul class="nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'index' %}">
-                            <i class="nc-icon nc-chart-pie-35"></i>
+                            
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
                         <a class="nav-link" href="{% url 'ipl_index' %}">
-                            <i class="nc-icon nc-circle-09"></i>
+                            
                             <p>IPL Analytics</p>
                         </a>
                     </li>

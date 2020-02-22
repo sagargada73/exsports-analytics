@@ -1,4 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, HttpResponseRedirect
+from django.http import JsonResponse
 from matplotlib import pylab
 from pylab import *
 import PIL, PIL.Image
@@ -188,13 +189,18 @@ def ipl_index(request):
     
     # toss_win_match_win(matches, delivery)
     toss_graph(matches, delivery)
-    team1_vs_team2('KKR','MI', matches)
     batting_bowling(delivery)
     team_chasing(delivery)
     top_batsmen(delivery)
     # top_batsmen_score(matches, delivery)
 
-    return render(request, 'ipl/dashboard.html', {})
+    teams =  ['MI','KKR','RCB','DC','CSK','RR','DD','GL','KXIP','SRH','RPS','KTK','PW','RPS']
+
+    context_data = {
+        'teams' : teams
+    }
+
+    return render(request, 'ipl/dashboard.html', context_data)
 
 
 def setTeam(request):
@@ -205,4 +211,31 @@ def setTeam(request):
         }
         return render(request, 'dashboard.html', context_data)
 
+def get_teams_stats(request):
 
+    team1 = request.POST.get('team1')
+    team2 = request.POST.get('team2')
+
+    matches_data = os.path.join(settings.BASE_DIR, 'data', 'matches.csv')
+    deliveries_data = os.path.join(settings.BASE_DIR, 'data', 'deliveries.csv')
+
+    matches = pd.read_csv(matches_data)   
+    delivery = pd.read_csv(deliveries_data)
+
+    matches.drop(['umpire3'], axis=1, inplace=True)
+    delivery.fillna(0,inplace=True)
+
+    matches.replace(['Mumbai Indians','Kolkata Knight Riders','Royal Challengers Bangalore','Deccan Chargers','Chennai Super Kings',
+                 'Rajasthan Royals','Delhi Daredevils','Gujarat Lions','Kings XI Punjab',
+                 'Sunrisers Hyderabad','Rising Pune Supergiants','Kochi Tuskers Kerala','Pune Warriors','Rising Pune Supergiant']
+                ,['MI','KKR','RCB','DC','CSK','RR','DD','GL','KXIP','SRH','RPS','KTK','PW','RPS'],inplace=True)
+
+    delivery.replace(['Mumbai Indians','Kolkata Knight Riders','Royal Challengers Bangalore','Deccan Chargers','Chennai Super Kings',
+                 'Rajasthan Royals','Delhi Daredevils','Gujarat Lions','Kings XI Punjab',
+                 'Sunrisers Hyderabad','Rising Pune Supergiants','Kochi Tuskers Kerala','Pune Warriors','Rising Pune Supergiant']
+                ,['MI','KKR','RCB','DC','CSK','RR','DD','GL','KXIP','SRH','RPS','KTK','PW','RPS'],inplace=True)
+    
+    team1_vs_team2(team1,team2, matches)
+
+    return HttpResponseRedirect('/ipl/')
+    
