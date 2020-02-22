@@ -6,7 +6,7 @@ def index(request):
 
 
 def setCategory(request):
-    category = request.POST.category;
-    print(category)
+    team = request.POST.team;
+    print(team)
     context_data = {}
     return render(request, 'dashboard.html', context_data)
