@@ -19,7 +19,33 @@ import bs4
 import requests
 import sweetify
 
+from .utils import get_id, fetch_data, battingPerf3d, batsmanAvgRunsGround, batsmanRunsLikelihood, batsmanAvgRunsOpposition
 mlt.style.use('fivethirtyeight')
+
+def individual_stats(request):
+    if request.method == 'GET':
+        return render(request, 'individual_stats.html', {})
+    else:
+        player_name = request.POST.get('player_name')
+        player_type = request.POST.get('type')
+        player_id = get_id(player_name)
+
+        # print(player_name)
+
+        data = fetch_data(player_name, player_id, player_type)
+
+        battingPerf3d(player_name, player_id)
+        batsmanAvgRunsGround(player_name, player_id)
+        batsmanRunsLikelihood(player_name, player_id)
+        batsmanAvgRunsOpposition(player_name, player_id)
+        # print(data)
+        context_data = {
+            'data': data,
+            'player_name': player_name
+        }
+
+        # return render(request, 'individual_stats.html', context_data)
+        return render(request, 'individual_stats.html', context_data)
 
 def getStats(batsman, bowler):
 
