@@ -1,0 +1,12 @@
+To use as a coach/third party:
+
+1. Simply visit http://exsports-analytics.herokuapp.com/
+
+To explore our repository:
+
+1. Fork this Repository.
+2. Clone your Fork on a different branch:
+    git clone -b <name-of-branch> https://github.com/nachiketbhuta/exsports-analytics.git
+3. After adding any feature:
+    Goto your fork and create a pull request.
+4. We will test your modifications and merge changes.
