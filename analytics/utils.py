@@ -44,3 +44,28 @@ def batsmanAvgRunsOpposition(player, id):
     imageFile = os.path.join(settings.BASE_DIR, 'static', 'stats' , 'individual', 'batsmanAvgRunsOpposition.png')
     plt.savefig(imageFile, format='png')
     plt.close()
+
+# Bowler
+def bowlerWktsFreqPercent(player, id):
+    plt = ca.bowlerWktsFreqPercent(os.path.join(path, str(id) + ".csv"), player)
+    imageFile = os.path.join(settings.BASE_DIR, 'static', 'stats' , 'individual', 'bowlerWktsFreqPercent.png')
+    plt.savefig(imageFile, format='png')
+    plt.close()
+
+def bowlerAvgWktsGround(player, id):
+    plt = ca.bowlerAvgWktsGround(os.path.join(path, str(id) + ".csv"), player)
+    imageFile = os.path.join(settings.BASE_DIR, 'static', 'stats' , 'individual', 'bowlerAvgWktsGround.png')
+    plt.savefig(imageFile, format='png')
+    plt.close()
+
+def bowlerMovingAverage(player, id):
+    plt = ca.bowlerMovingAverage(os.path.join(path, str(id) + ".csv"), player)
+    imageFile = os.path.join(settings.BASE_DIR, 'static', 'stats' , 'individual', 'bowlerMovingAverage.png')
+    plt.savefig(imageFile, format='png')
+    plt.close()
+
+def bowlerAvgWktsOpposition(player, id):
+    plt = ca.bowlerAvgWktsOpposition(os.path.join(path, str(id) + ".csv"), player)
+    imageFile = os.path.join(settings.BASE_DIR, 'static', 'stats' , 'individual', 'bowlerAvgWktsOpposition.png')
+    plt.savefig(imageFile, format='png')
+    plt.close()

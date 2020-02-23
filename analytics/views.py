@@ -1,5 +1,7 @@
 from django.shortcuts import render, HttpResponse, HttpResponseRedirect
 from django.http import JsonResponse
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pylab
 from pylab import *
 import PIL, PIL.Image
@@ -19,7 +21,7 @@ import bs4
 import requests
 import sweetify
 
-from .utils import get_id, fetch_data, battingPerf3d, batsmanAvgRunsGround, batsmanRunsLikelihood, batsmanAvgRunsOpposition
+from .utils import get_id, fetch_data, battingPerf3d, batsmanAvgRunsGround, batsmanRunsLikelihood, batsmanAvgRunsOpposition, bowlerWktsFreqPercent, bowlerAvgWktsGround, bowlerMovingAverage, bowlerAvgWktsOpposition
 mlt.style.use('fivethirtyeight')
 
 def individual_stats(request):
@@ -31,16 +33,29 @@ def individual_stats(request):
         player_id = get_id(player_name)
 
         # print(player_name)
+        try:
+            data = fetch_data(player_name, player_id, player_type)
 
-        data = fetch_data(player_name, player_id, player_type)
+            if player_type == 'batting' and data is not None:
+                battingPerf3d(player_name, player_id)
+                batsmanAvgRunsGround(player_name, player_id)
+                batsmanRunsLikelihood(player_name, player_id)
+                batsmanAvgRunsOpposition(player_name, player_id)
+            elif player_type == 'bowling' and data is not None:
+                bowlerWktsFreqPercent(player_name, player_id)
+                bowlerAvgWktsGround(player_name, player_id)
+                bowlerMovingAverage(player_name, player_id)
+                bowlerAvgWktsOpposition(player_name, player_id)    
+            else:
+                data = "Data not found"
+        except Exception as e:
+            sweetify.sweetalert(request, "Data not found")
 
-        battingPerf3d(player_name, player_id)
-        batsmanAvgRunsGround(player_name, player_id)
-        batsmanRunsLikelihood(player_name, player_id)
-        batsmanAvgRunsOpposition(player_name, player_id)
+        
         # print(data)
         context_data = {
             'data': data,
+            'player_type': player_type,
             'player_name': player_name
         }
 

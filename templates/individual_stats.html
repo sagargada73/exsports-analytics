@@ -40,7 +40,7 @@
                     <li>
                         <a class="nav-link" href="{% url 'index' %}">
                             
-                            <p>Dashboard</p>
+                            <p>Head To Head Statistics</p>
                         </a>
                     </li>
                     <li>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    {% if player_name %}
+                    {% if player_type == 'batting' %}
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card ">
@@ -164,6 +164,55 @@
                             </div>
                         </div>
                     </div>
+                    {% else %}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card ">
+                                    <div class="card-header ">
+                                        <h4 class="card-title">Frequent Percent of {{player_name}}</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <img src="{% static 'stats/individual/bowlerWktsFreqPercent.png' %}" style="width: 100%; height: 30%;" alt="Toss Win Match Win">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card ">
+                                    <div class="card-header ">
+                                        <h4 class="card-title">Average Wickets of {{player_name}} on Ground</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <img src="{% static 'stats/individual/bowlerAvgWktsGround.png' %}" style="width: 100%; height: 30%;" alt="Toss Win Match Win">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card ">
+                                    <div class="card-header ">
+                                        <h4 class="card-title">Moving Average of {{player_name}}</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <img src="{% static 'stats/individual/bowlerMovingAverage.png' %}" style="width: 100%; height: 30%;" alt="Toss Win Match Win">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card ">
+                                    <div class="card-header ">
+                                        <h4 class="card-title">Average Wickets of {{player_name}} vs Opposition</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <img src="{% static 'stats/individual/bowlerAvgWktsOpposition.png' %}" style="width: 100%; height: 30%;" alt="Toss Win Match Win">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     {% endif %}
                     
                 </div>
