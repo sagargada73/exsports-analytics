@@ -1,67 +1,60 @@
-,Overs,Mdns,Runs,Wkts,Econ,Pos,Inns,Unnamed: 7,Opposition,Ground,Start Date
-0,DNB,-,-,-,-,-,1,,v Australia,Mohali,14 Mar 2013
-1,DNB,-,-,-,-,-,3,,v Australia,Mohali,14 Mar 2013
-2,DNB,-,-,-,-,-,1,,v West Indies,Kolkata,6 Nov 2013
-3,DNB,-,-,-,-,-,3,,v West Indies,Kolkata,6 Nov 2013
-4,DNB,-,-,-,-,-,1,,v West Indies,Mumbai,14 Nov 2013
-5,DNB,-,-,-,-,-,3,,v West Indies,Mumbai,14 Nov 2013
-6,DNB,-,-,-,-,-,2,,v South Africa,Johannesburg,18 Dec 2013
-7,DNB,-,-,-,-,-,4,,v South Africa,Johannesburg,18 Dec 2013
-8,DNB,-,-,-,-,-,2,,v South Africa,Durban,26 Dec 2013
-9,DNB,-,-,-,-,-,4,,v South Africa,Durban,26 Dec 2013
-10,DNB,-,-,-,-,-,1,,v New Zealand,Auckland,6 Feb 2014
-11,DNB,-,-,-,-,-,3,,v New Zealand,Auckland,6 Feb 2014
-12,DNB,-,-,-,-,-,1,,v New Zealand,Wellington,14 Feb 2014
-13,1.0,0,3,0,3.00,8,3,,v New Zealand,Wellington,14 Feb 2014
-14,DNB,-,-,-,-,-,2,,v England,Nottingham,9 Jul 2014
-15,DNB,-,-,-,-,-,2,,v England,Lord's,17 Jul 2014
-16,2.0,0,2,0,1.00,6,4,,v England,Lord's,17 Jul 2014
-17,2.0,0,4,0,2.00,6,1,,v England,Southampton,27 Jul 2014
-18,DNB,-,-,-,-,-,3,,v England,Southampton,27 Jul 2014
-19,DNB,-,-,-,-,-,1,,v Australia,Adelaide,9 Dec 2014
-20,DNB,-,-,-,-,-,3,,v Australia,Adelaide,9 Dec 2014
-21,DNB,-,-,-,-,-,2,,v Australia,Brisbane,17 Dec 2014
-22,DNB,-,-,-,-,-,4,,v Australia,Brisbane,17 Dec 2014
-23,DNB,-,-,-,-,-,1,,v Australia,Melbourne,26 Dec 2014
-24,DNB,-,-,-,-,-,3,,v Australia,Melbourne,26 Dec 2014
-25,DNB,-,-,-,-,-,2,,v Bangladesh,Fatullah,10 Jun 2015
-26,1.0,1,0,0,0.00,5,3,,v Bangladesh,Fatullah,10 Jun 2015
-27,DNB,-,-,-,-,-,1,,v Sri Lanka,Galle,12 Aug 2015
-28,DNB,-,-,-,-,-,3,,v Sri Lanka,Galle,12 Aug 2015
-29,DNB,-,-,-,-,-,2,,v South Africa,Mohali,5 Nov 2015
-30,DNB,-,-,-,-,-,4,,v South Africa,Mohali,5 Nov 2015
-31,DNB,-,-,-,-,-,1,,v South Africa,Bengaluru,14 Nov 2015
-32,DNB,-,-,-,-,-,2,,v South Africa,Nagpur,25 Nov 2015
-33,DNB,-,-,-,-,-,4,,v South Africa,Nagpur,25 Nov 2015
-34,DNB,-,-,-,-,-,2,,v South Africa,Delhi,3 Dec 2015
-35,3.0,1,9,0,3.00,5,4,,v South Africa,Delhi,3 Dec 2015
-36,DNB,-,-,-,-,-,2,,v West Indies,North Sound,21 Jul 2016
-37,DNB,-,-,-,-,-,3,,v West Indies,North Sound,21 Jul 2016
-38,DNB,-,-,-,-,-,1,,v West Indies,Kingston,30 Jul 2016
-39,DNB,-,-,-,-,-,3,,v West Indies,Kingston,30 Jul 2016
-40,DNB,-,-,-,-,-,2,,v West Indies,Gros Islet,9 Aug 2016
-41,DNB,-,-,-,-,-,4,,v West Indies,Gros Islet,9 Aug 2016
-42,DNB,-,-,-,-,-,2,,v New Zealand,Kolkata,30 Sep 2016
-43,DNB,-,-,-,-,-,4,,v New Zealand,Kolkata,30 Sep 2016
-44,DNB,-,-,-,-,-,2,,v Sri Lanka,Galle,26 Jul 2017
-45,DNB,-,-,-,-,-,4,,v Sri Lanka,Galle,26 Jul 2017
-46,DNB,-,-,-,-,-,2,,v Sri Lanka,Colombo (SSC),3 Aug 2017
-47,DNB,-,-,-,-,-,3,,v Sri Lanka,Colombo (SSC),3 Aug 2017
-48,DNB,-,-,-,-,-,2,,v Sri Lanka,Pallekele,12 Aug 2017
-49,DNB,-,-,-,-,-,3,,v Sri Lanka,Pallekele,12 Aug 2017
-50,DNB,-,-,-,-,-,2,,v Sri Lanka,Kolkata,16 Nov 2017
-51,DNB,-,-,-,-,-,4,,v Sri Lanka,Kolkata,16 Nov 2017
-52,DNB,-,-,-,-,-,2,,v Sri Lanka,Delhi,2 Dec 2017
-53,DNB,-,-,-,-,-,4,,v Sri Lanka,Delhi,2 Dec 2017
-54,DNB,-,-,-,-,-,1,,v South Africa,Cape Town,5 Jan 2018
-55,DNB,-,-,-,-,-,3,,v South Africa,Cape Town,5 Jan 2018
-56,DNB,-,-,-,-,-,2,,v Afghanistan,Bengaluru,14 Jun 2018
-57,DNB,-,-,-,-,-,3,,v Afghanistan,Bengaluru,14 Jun 2018
-58,DNB,-,-,-,-,-,1,,v England,Birmingham,1 Aug 2018
-59,DNB,-,-,-,-,-,3,,v England,Birmingham,1 Aug 2018
-60,DNB,-,-,-,-,-,2,,v England,Nottingham,18 Aug 2018
-61,DNB,-,-,-,-,-,4,,v England,Nottingham,18 Aug 2018
-62,DNB,-,-,-,-,-,1,,v England,Southampton,30 Aug 2018
-63,DNB,-,-,-,-,-,3,,v England,Southampton,30 Aug 2018
-64,DNB,-,-,-,-,-,1,,v England,The Oval,7 Sep 2018
-65,DNB,-,-,-,-,-,3,,v England,The Oval,7 Sep 2018
+,Runs,Mins,BF,4s,6s,SR,Pos,Dismissal,Inns,Opposition,Ground,Start Date
+0,187,250,174,33,2,107.47,2,caught,2,v Australia,Mohali,14 Mar 2013
+1,DNB,-,-,-,-,-,-,-,4,v Australia,Mohali,14 Mar 2013
+2,23,64,34,4,0,67.64,1,bowled,2,v West Indies,Kolkata,6 Nov 2013
+3,33,63,28,7,0,117.85,2,caught,2,v West Indies,Mumbai,14 Nov 2013
+4,13,37,27,2,0,48.14,2,caught,1,v South Africa,Johannesburg,18 Dec 2013
+5,15,32,21,1,0,71.42,1,caught,3,v South Africa,Johannesburg,18 Dec 2013
+6,29,64,49,4,0,59.18,1,caught,1,v South Africa,Durban,26 Dec 2013
+7,19,120,87,2,0,21.83,1,caught,3,v South Africa,Durban,26 Dec 2013
+8,0,1,3,0,0,0.00,1,caught,2,v New Zealand,Auckland,6 Feb 2014
+9,115,322,211,12,1,54.50,2,caught,4,v New Zealand,Auckland,6 Feb 2014
+10,98,189,127,14,1,77.16,1,caught,2,v New Zealand,Wellington,14 Feb 2014
+11,2,18,10,0,0,20.00,2,lbw,4,v New Zealand,Wellington,14 Feb 2014
+12,12,30,24,0,0,50.00,2,caught,1,v England,Nottingham,9 Jul 2014
+13,29,52,29,6,0,100.00,2,caught,3,v England,Nottingham,9 Jul 2014
+14,7,13,11,1,0,63.63,2,caught,1,v England,Lord's,17 Jul 2014
+15,31,64,45,4,0,68.88,2,caught,3,v England,Lord's,17 Jul 2014
+16,6,29,17,1,0,35.29,2,caught,2,v England,Southampton,27 Jul 2014
+17,37,124,85,6,0,43.52,2,caught,4,v England,Southampton,27 Jul 2014
+18,25,36,24,5,0,104.16,2,bowled,2,v Australia,Adelaide,9 Dec 2014
+19,9,21,8,1,0,112.50,2,caught,4,v Australia,Adelaide,9 Dec 2014
+20,24,72,39,0,0,61.53,2,caught,1,v Australia,Brisbane,17 Dec 2014
+21,81,204,145,8,0,55.86,2,lbw,3,v Australia,Brisbane,17 Dec 2014
+22,28,64,51,3,0,54.90,2,caught,2,v Australia,Melbourne,26 Dec 2014
+23,0,6,5,0,0,0.00,2,lbw,4,v Australia,Melbourne,26 Dec 2014
+24,173,281,195,23,0,88.71,2,caught,1,v Bangladesh,Fatullah,10 Jun 2015
+25,134,370,271,13,0,49.44,2,bowled,2,v Sri Lanka,Galle,12 Aug 2015
+26,28,119,83,3,0,33.73,2,caught,4,v Sri Lanka,Galle,12 Aug 2015
+27,0,7,4,0,0,0.00,2,caught,1,v South Africa,Mohali,5 Nov 2015
+28,0,12,8,0,0,0.00,2,caught,3,v South Africa,Mohali,5 Nov 2015
+29,45*,107,62,7,0,72.58,2,not out,2,v South Africa,Bengaluru,14 Nov 2015
+30,12,68,23,2,0,52.17,2,caught,1,v South Africa,Nagpur,25 Nov 2015
+31,39,120,78,6,0,50.00,2,caught,3,v South Africa,Nagpur,25 Nov 2015
+32,33,132,85,4,0,38.82,2,lbw,1,v South Africa,Delhi,3 Dec 2015
+33,21,133,86,2,0,24.41,2,bowled,3,v South Africa,Delhi,3 Dec 2015
+34,84,241,147,9,1,57.14,2,lbw,1,v West Indies,North Sound,21 Jul 2016
+35,27,100,52,5,0,51.92,2,caught,2,v West Indies,Kingston,30 Jul 2016
+36,1,14,4,0,0,25.00,2,caught,1,v West Indies,Gros Islet,9 Aug 2016
+37,26,82,48,0,0,54.16,2,lbw,3,v West Indies,Gros Islet,9 Aug 2016
+38,1,5,10,0,0,10.00,1,bowled,1,v New Zealand,Kolkata,30 Sep 2016
+39,17,56,32,4,0,53.12,1,lbw,3,v New Zealand,Kolkata,30 Sep 2016
+40,190,235,168,31,0,113.09,1,caught,1,v Sri Lanka,Galle,26 Jul 2017
+41,14,14,14,3,0,100.00,1,caught,3,v Sri Lanka,Galle,26 Jul 2017
+42,35,47,37,5,1,94.59,1,lbw,1,v Sri Lanka,Colombo (SSC),3 Aug 2017
+43,119,209,123,17,0,96.74,1,caught,1,v Sri Lanka,Pallekele,12 Aug 2017
+44,8,32,11,1,0,72.72,2,bowled,1,v Sri Lanka,Kolkata,16 Nov 2017
+45,94,175,116,11,2,81.03,2,caught,3,v Sri Lanka,Kolkata,16 Nov 2017
+46,23,47,35,4,0,65.71,2,caught,1,v Sri Lanka,Delhi,2 Dec 2017
+47,67,176,91,5,1,73.62,2,stumped,3,v Sri Lanka,Delhi,2 Dec 2017
+48,16,26,13,3,0,123.07,2,caught,2,v South Africa,Cape Town,5 Jan 2018
+49,16,37,20,2,0,80.00,2,caught,4,v South Africa,Cape Town,5 Jan 2018
+50,107,128,96,19,3,111.45,2,caught,1,v Afghanistan,Bengaluru,14 Jun 2018
+51,26,83,46,3,0,56.52,2,caught,2,v England,Birmingham,1 Aug 2018
+52,13,37,24,1,0,54.16,2,caught,4,v England,Birmingham,1 Aug 2018
+53,35,84,65,7,0,53.84,1,caught,1,v England,Nottingham,18 Aug 2018
+54,44,104,63,6,0,69.84,1,stumped,3,v England,Nottingham,18 Aug 2018
+55,23,85,53,3,0,43.39,1,caught,2,v England,Southampton,30 Aug 2018
+56,17,42,29,3,0,58.62,1,caught,4,v England,Southampton,30 Aug 2018
+57,3,7,6,0,0,50.00,2,lbw,2,v England,The Oval,7 Sep 2018
+58,1,11,6,0,0,16.66,2,lbw,4,v England,The Oval,7 Sep 2018

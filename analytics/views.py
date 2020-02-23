@@ -36,23 +36,22 @@ def individual_stats(request):
         try:
             data = fetch_data(player_name, player_id, player_type)
 
-            if player_type == 'batting' and data is not None:
+            if player_type == 'batting':
                 battingPerf3d(player_name, player_id)
                 batsmanAvgRunsGround(player_name, player_id)
                 batsmanRunsLikelihood(player_name, player_id)
                 batsmanAvgRunsOpposition(player_name, player_id)
-            elif player_type == 'bowling' and data is not None:
+            else:
                 bowlerWktsFreqPercent(player_name, player_id)
                 bowlerAvgWktsGround(player_name, player_id)
                 bowlerMovingAverage(player_name, player_id)
                 bowlerAvgWktsOpposition(player_name, player_id)    
-            else:
-                data = "Data not found"
+            
         except Exception as e:
             sweetify.sweetalert(request, "Data not found")
 
         
-        # print(data)
+        print(data)
         context_data = {
             'data': data,
             'player_type': player_type,
